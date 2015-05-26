@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <title>パスワード変更</title>
+  <meta charset="UTF-8">
+<style type="text/css">
+table{
+  border: 1px solid black;
+  background: #CCCCCC;
+}
+tr{
+  line-height: 1.8;
+}
+</style>
+</head>
+<body>
+  <h1>パスワード変更</h1>
+  <p>パスワードを変更します。下記に新しいパスワードを入力してください。<br>
+  パスワードは次の条件に合うように設定してください。パスワードは暗号化して保存されます。</p>
+  <ul>
+    <li>6文字以上，20文字以下</li>
+    <li>使用できるのは半角数字，半角英字(大文字と小文字を区別)，記号.-_のみ</li>
+    <li>半角英字(大文字と小文字は区別)と半角数字の<b>両方を必ず</b>含む</li>
+    <li>ユーザー名(大文字と小文字の区別なく)を含んでいない</li>
+  </ul>
+  <form action="reset.php" method="post">
+    <table>
+      <tr>
+        <td>新しいパスワード：</td>
+        <td><input type="password" name="pwd_a" size="25"></td>
+      </tr>
+      <tr>
+        <td>新しいパスワード(確認)：</td>
+        <td><input type="password" name="pwd_b" size="25"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="submit" value="パスワードを変更"></td>
+      </tr>
+    </table>
+  </form>
+</body>
+</html>
